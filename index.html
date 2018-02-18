@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<title>Biswas Sharma</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+body {font-size:16px;}
+.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.w3-half img:hover{opacity:1}
+</style>
+<body>
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-teal w3-collapse w3-top w3-medium w3-padding" style="z-index:3;width:300px;font-weight:normal;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Hide menu</a>
+  <div class="w3-container">
+    <h3 class="w3-padding-22">Biswas Sharma</h3>
+  </div>
+  <div class="w3-bar-block">
+    <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a> 
+    <a href="#nuclear" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Nuclear Physics</a>
+	<!--^ rhip suff, yale project, scintillators presentation --> 
+    <a href="#astro" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Astrophysics</a>
+	<!--^ pannuti projects (refer to papers and presentations as well) , 
+		gruppe swift stuff, radio telescope paper, daad report and presentation plus kentucky capitol,
+		mathematica polytrope code --> 
+    <a href="#spacecraft" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Spacecraft and Tracking</a>
+	<!--^ detector testing plus nasa pdr, isee3 tracking -->
+    <a href="#other-school" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Other School Projects</a>
+	<!-- military modernization of china, n+k queens,  -->
+    <a href="#teaching" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Teaching</a>
+	<!--^ UT astronomy general physics electromagnetism lab, Upward Bound python algebraII scientific method, 
+		tutoring and learning center -->
+    <a href="#side-projects" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Side Projects</a>
+	<!--^ honors committee, insignia, midreel, blog posts, republica article  --> 
+    <a href="#volunteering" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Volunteering</a>
+	<!--^ solar system ambassador, environmental eagles: paper recycle bins, trail work, tornado relief, food waste audit,
+		swawambhu renovation, interact-rotaract, prayash's orphanage-->  
+    <a href="#miscellaneous" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Miscellaneous Problems solved</a>
+	<!--^  led namesign, polytrope, optimal binning algorithm, brachistrochrone problem, freeway traffic simulation,
+		simple image classification using neural net -->
+    <a href="#prespub" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Publications & Presentations</a>
+    
+    <a href="#hobbies -interests" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Hobbies & Interests</a>
+	<!--^ soccer champ, quora content, evolution, intelligence, free speech (unoffended american)??, orphanage, nature & conservation, cooking -->
+    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Contact</a>
+  </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-teal w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-teal w3-margin-right" onclick="w3_open()">☰</a>
+  <span>Biswas Sharma</span>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+  <!-- Header ---------------------------------------------------------------------------------------------------------->
+  <div class="w3-container" style="margin-top:100px" id="showcase">
+    <h1 class="w3-xxxlarge"><b>Welcome</b></h1>
+    <!--<h1 class="w3-xxxlarge w3-text-red"><b>Showcase.</b></h1>-->
+    <h4> I built this page to display some of my projects. <br>
+    Scroll down or click on a link to explore more. </h4>
+    <hr style="width:200px;border:1px solid black" class="w3-round">
+  </div>
+	
+
+   <!-- MAIN THEME PHOTO ------------------------------------------------------------------------------------------>
+  <div class="w3-row-padding">
+    <div class="w3">
+      <img src="summitfade.jpg" style="width:100%" onclick="onClick(this)" alt="Summit of Mount Julius Caesar">
+    </div> 
+	</div>
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-gray" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-gray w3-xxlarge w3-display-topright">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>	
+
+	
+	
+  <!-- nuclear  ----------------------------------------------------------------------------------------------- -->
+  <div class="w3-container" id="hardwaresoftware" style="margin-top:75px">
+    <h1 class="w3-xxlarge w3-text-black"><b>Nuclear Physics</b></h1>
+    <hr style="width:200px;border:1px solid black" class="w3-round">
+    
+    <p style="text-align: justify;">
+<!--The scientific method of inquiry leads us to an understanding of the universe as being composed of mostly dark energy and dark matter. Humblingly, we do not have an existing physical framework to explain their properties. -->
+The Large Hadron Collider (LHC) at CERN and the Relativistic Heavy Ion Collider (RHIC) at the Brookhaven National Laboratory have the ability to collide heavy nuclei, such as those of gold and uranium, at nearly the speed of light, reaching temperatures of trillions of degrees Celcius. These laboratories have provided evidence of the formation of an exotic state of matter, called the quark-gluon plasma (QGP). It only exists for a brief amount of time after such collisions and instantly freezes out into a plethora of new particles, which carry the signatures we can use to deduct QGP properties. It reportedly behaves like an almost perfect quantum fluid with no resistance and exhibits other interesting properties.
+
+One of the methods to probe the properties of this matter is by analyzing the conversion of the beam-direction energy at the time of collision into transverse energy after the collision. This analysis is generally done by using data from the calorimeters placed around the collision site. Under Dr. Christine Nattrass in the Relativistic Heavy Ion Physics (RHIP) group at the University of Tennessee (UT), I am developing C++ codes for a new method to perform the transverse energy analysis by using tracking detectors instead of the conventional calorimeters.
+
+This method involves a manipulation of the transverse momentum spectra, utilizing the mathematical tools pertaining to heavy-ion collision physics, to calculate the transverse energy production. Due to the limited capabilities of the detectors, however, there is a lack of available data points corresponding to low and high momenta. I use the Boltzmann-Gibbs blast wave function to perform a non-linear regression on the available data points and extract the good-fit parameters and other statistics to extrapolate the given spectrum into the low- and high- momentum regions. CERN's ROOT, an object-oriented framework for large-scale data analysis, comes handy in this regard.
+
+Before joining the RHIP group, I worked under Dr. Alfredo Galindo-Uribarri at the Physics Division in Oak Ridge National Laboratory in projects related to the study of the decay of the uranium nucleus through the resulting (anti)neutrino signal. About a trillion neutrinos pass through our bodies every second, unnoticed. They are so difficult to detect because they only interact by the nuclear weak force and the even weaker gravity. Very sensitive detectors have to be built to detect them, and clever algorithms and statistical approaches have to be devised to study the noisy signals. I did a literature review of the performance of scintilaltion materials at low temperatures and presented it in a seminar at UT. I also attended a data analysis workshop at Yale Wright Laboratory and assisted in the assembly of the liquid scintillator detector system for the PROSPECT collaboration.
+
+Below are some pictures (click to read descriptions) that show glimpses of my work followed by links to some of the relevant document.
+
+http://www.phys.utk.edu/research/hep/seminar-slides/2017-spring/sharma-april05.pdf </p>
+<!--    
+
+-->  
+   <!-- Photo grid (modal) -->
+  <div class="w3-row-padding">
+    <div class="w3-half">
+      <img src="cent3_la_Au+Au_19.6.png" style="width:100%" onclick="onClick(this)" alt="Red curve shows the Boltzmann-Gibbs blast wave functional fit on the transverse momentum spectrum for lambda particles identified by the STAR detector for 19.6 GeV collisions (10-15% central, i.e., slightly off from being head-on) of gold nuclei. Parameters extracted from the chi-square goodness-of-fit test, as well as other statistics, are shown in the box on the top right. ">
+    </div> 
+
+    <div class="w3-half">
+      <img src="parallelCoordPlot_4Axes.png" style="width:100%" onclick="onClick(this)" alt="Parallel coordinates plot for 270 diffrent spectra relating 6 different identified particles (color-coded) to their respective collision centrality classes, good-fit parameters, and the transverse energy calculated using said parameters">
+    </div>  
+	  
+    <div class="w3-half">
+      <img src="PROSPECT_ExperimentAssemblyYale.jpg" style="width:100%" onclick="onClick(this)" alt="Topping up PROSPECT photomultiplier tube housing with mineral oil to reduce loss of incoming light due to refraction; Wright Laboratory, Yale University, summer 2017">    
+    </div> 
+<!--	  
+    <div class="w3-half">
+      <img src="chamberlandscape2.jpg" style="width:100%" onclick="onClick(this)" alt="experimental apparatus">
+    </div>
+  </div>
+-->	
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xxlarge w3-display-topright">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>
+ 
+  </div>
+	
+	
+<!-- W3.CSS Container-->
+<div class="w3-light-grey w3-container w3-padding-32" style="margin-top:60px;padding-right:58px"><p class="w3-center">Biswas Sharma. All rights reserved. Copyright &copy; 2018.</p></div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+</script>
+
+</body>
+</html>
