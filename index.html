@@ -28,7 +28,12 @@ body {font-size:16px;}
 		gruppe swift stuff, radio telescope paper, daad report and presentation plus kentucky capitol,
 		mathematica polytrope code --> 
     <a href="#spacecraft" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Spacecraft and Tracking</a>
-	<!--^ detector testing plus nasa pdr, isee3 tracking -->
+	<!--^ detector testing plus nasa pdr, isee3 tracking, "Dr. Malphrus,
+
+We have decided in favor of the Crew Re-supply orbit based on the assumption of an unhealthy amount of radiation exposure in the 99-degree orbit. We can discuss about it in the meeting on Monday to make a final decision.
+
+Thanks,
+Biswas" -->
     <a href="#other-school" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Other School Projects</a>
 	<!-- military modernization of china, n+k queens,  -->
     <a href="#teaching" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Teaching</a>
@@ -75,7 +80,7 @@ body {font-size:16px;}
    <!-- MAIN THEME PHOTO ------------------------------------------------------------------------------------------>
   <div class="w3-row-padding">
     <div class="w3">
-      <img src="summitfade.jpg" style="width:100%" onclick="onClick(this)" alt="Summit of Mount Julius Caesar">
+      <img src="IMG_0607.jpg" style="width:100%" onclick="onClick(this)" alt="Annapurna range from Sarangkot Village, Pokhara, Nepal">
     </div> 
 	</div>
   <!-- Modal for full size images on click-->
@@ -142,10 +147,62 @@ Below are some pictures (click to read descriptions) that show glimpses of my wo
     </div>
   </div>
 
-<a href="http://www.phys.utk.edu/research/hep/seminar-slides/2017-spring/sharma-april05.pdf">Particle Physics and Astro-Cosmology Seminar talk on "Survey of the performance of scintillation materials at low temperatures."</a>
- 
+<p> LINK -> <a href="http://www.phys.utk.edu/research/hep/seminar-slides/2017-spring/sharma-april05.pdf">Particle Physics and Astro-Cosmology Seminar talk on "Survey of the performance of scintillation materials at low temperatures."</a>
+</p>
   </div>
 	
+  <!-- astrophysics  ----------------------------------------------------------------------------------------------- -->
+  <div class="w3-container" id="hardwaresoftware" style="margin-top:75px">
+    <h1 class="w3-xxlarge w3-text-black"><b>Astrophysics</b></h1>
+    <hr style="width:200px;border:1px solid black" class="w3-round">
+    
+    <p style="text-align: justify;">
+
+The Large Hadron Collider (LHC) at CERN and the Relativistic Heavy Ion Collider (RHIC) at the Brookhaven National Laboratory have the ability to collide heavy nuclei, such as those of gold and uranium, at nearly the speed of light, reaching temperatures of trillions of degrees Celcius. These laboratories have provided evidence of the formation of an exotic state of matter, called the quark-gluon plasma (QGP). It only exists for a brief amount of time after such collisions and instantly freezes out into a plethora of new particles, which carry the signatures we can use to deduct QGP properties. It reportedly behaves like an almost perfect quantum fluid with no resistance and exhibits other interesting properties.
+</p>
+<p>
+One of the methods to probe the properties of this matter is by analyzing the conversion of the beam-direction energy at the time of collision into transverse energy after the collision. This analysis is generally done by using data from the calorimeters placed around the collision site. Under Dr. Christine Nattrass in the Relativistic Heavy Ion Physics (RHIP) group at the University of Tennessee (UT), I am developing C++ codes for a new method to perform the transverse energy analysis by using tracking detectors instead of the conventional calorimeters.
+</p>
+<p>
+This method involves a manipulation of the transverse momentum spectra, utilizing the mathematical tools pertaining to heavy-ion collision physics, to calculate the transverse energy production. Due to the limited capabilities of the detectors, however, there is a lack of available data points corresponding to low and high momenta. I use the Boltzmann-Gibbs blast wave function to perform a non-linear regression on the available data points and extract the good-fit parameters and other statistics to extrapolate the given spectrum into the low- and high- momentum regions. CERN's ROOT, an object-oriented framework for large-scale data analysis, comes handy in this regard.
+</p>
+<p>
+Before joining the RHIP group, I worked under Dr. Alfredo Galindo-Uribarri at the Physics Division in Oak Ridge National Laboratory in projects related to the study of the decay of the uranium nucleus through the resulting (anti)neutrino signal. About a trillion neutrinos pass through our bodies every second, unnoticed. They are so difficult to detect because they only interact by the nuclear weak force and the even weaker gravity. Very sensitive detectors have to be built to detect them, and clever algorithms and statistical approaches have to be devised to study the noisy signals. I did a literature review of the performance of scintilaltion materials at low temperatures and presented it in a seminar at UT. I also attended a data analysis workshop at Yale Wright Laboratory and assisted in the assembly of the liquid scintillator detector system for the PROSPECT collaboration.
+</p>
+<p>
+Below are some pictures (click to read the descriptions) that show glimpses of my work followed by links to some of the relevant documents.
+</p>
+
+<!--    
+
+-->  
+   <!-- Photo grid (modal) -->
+  <div class="w3-row-padding">
+    <div class="w3-half">
+      <img src="cent3_la_Au+Au_19.6.png" style="width:100%" onclick="onClick(this)" alt="Red curve shows the Boltzmann-Gibbs blast wave functional fit on the transverse momentum spectrum for lambda particles identified by the STAR detector for 19.6 GeV collisions (10-15% central, i.e., slightly off from being head-on) of gold nuclei. Parameters extracted from the chi-square goodness-of-fit test, as well as other statistics, are shown in the box on the top right. ">
+    </div> 
+
+    <div class="w3-half">
+      <img src="parallelCoordPlot_4Axes.png" style="width:100%" onclick="onClick(this)" alt="Parallel coordinates plot for 270 diffrent spectra relating 6 different identified particles (color-coded) to their respective collision centrality classes, good-fit parameters, and the transverse energy calculated using said parameters">
+    </div>  
+	  
+    <div class="w3-half">
+      <img src="PROSPECT_ExperimentAssemblyYale.jpg" style="width:100%" onclick="onClick(this)" alt="Topping up PROSPECT photomultiplier tube housing with mineral oil to reduce loss of incoming light due to refraction; Wright Laboratory, Yale University, summer 2017">    
+    </div> 
+<!--	  
+    <div class="w3-half">
+      <img src="chamberlandscape2.jpg" style="width:100%" onclick="onClick(this)" alt="experimental apparatus">
+    </div>
+  </div>
+-->	
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xxlarge w3-display-topright">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>
 	
 <!-- W3.CSS Container-->
 <div class="w3-light-grey w3-container w3-padding-32" style="margin-top:60px;padding-right:58px"><p class="w3-center">Biswas Sharma. All rights reserved. Copyright &copy; 2018.</p></div>
